@@ -229,7 +229,7 @@ impl Default for KeywordSize {
 #[allow(missing_docs)]
 #[cfg_attr(feature = "servo", derive(Deserialize, Serialize))]
 #[derive(Animate, Clone, ComputeSquaredDistance, Copy, Debug, MallocSizeOf,
-         PartialEq, SpecifiedValueInfo, ToAnimatedValue, ToAnimatedZero)]
+         Hash, PartialEq, SpecifiedValueInfo, ToAnimatedValue, ToAnimatedZero)]
 pub enum FontStyle<Angle> {
     #[animation(error)]
     Normal,
